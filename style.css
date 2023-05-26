@@ -22,13 +22,13 @@ a {
   color: black;
   text-decoration: underline 2px;
 }
-.cart-page {
-  margin: 80px auto;
+button:hover {
+  transform: scale(1.1);
 }
-table {
-  width: 100%;
-  border-collapse: collapse;
+.far:hover {
+  transform: scale(1.1);
 }
-.productsss {
-  width: 50px;
+.star:hover {
+  transform: scale(1.1);
+  color: rgb(255, 221, 29);
 }
