@@ -33,7 +33,9 @@
       <div class="container-fluid bg-dark">
         <nav class="navbar navbar-expand-sm">
           <div class="container-fluid">
-            <a href="index.html" class="navbar-brand text-white p-0"> Silakbo</a>
+            <a href="index.html" class="navbar-brand text-white p-0">
+              Silakbo</a
+            >
             <button
               class="navbar-toggler me-2 bg-dark"
               type="button"
@@ -115,9 +117,86 @@
     <br />
     <br />
 
-    <div class="contaienr text-center">
-      <h1>DEMO PRODUCT</h1>
+    <div class="container">
+      <div class="container">
+        <a href="product.html"
+          ><i class="fas fa-arrow-left fs-5 text-black"></i
+        ></a>
+        <br />
+        <br />
+        <div class="container bg-light shadow-lg d-flex">
+          <div class="row">
+            <div class="col-md-5">
+              <br />
+              <br />
+              <img src="product.png" class="demoimgs w-100" />
+            </div>
+            <div class="col-md-5 col-sm-12 p-3">
+              <br />
+              <h1>Panaginip</h1>
+              <p>"Malayo pa pero nakayo na"</p>
+              <div class="star">
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star checked"></i>
+                <i class="fa fa-star-half-o"></i>
+              </div>
+              <br />
+              <p class="text-danger m-">Price: 650.00</p>
+              <label for="id">Select</label>
+              <select id="size" style="width: 100px" class="border-0 bg-light">
+                <option selected="Size">Size</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">large</option>
+                <option value="xl">Extra Large</option>
+              </select>
+              <br />
+              <label for="qt">Quantity: </label>
+              <input
+                type="number"
+                style="width: 35px"
+                id="qty"
+                class="border-0 bg-light"
+                placeholder="1"
+              />
+              <br />
+              <br />
+
+              <div class="container text-center">
+                <button class="carts btn btn-outline-dark">
+                  <a href="cart.html" class="text-dark"
+                    ><i class="fab fa-opencart"> </i> ADD TO CART</a
+                  >
+                </button>
+                <button class="btn btn-dark">
+                  <a href="" class="text-white">CHECK OUT</a>
+                </button>
+              </div>
+            </div>
+            <hr />
+            <div class="col-12 mx-auto d-flex">
+              <p class="m-1">Share to: &nbsp;</p>
+              <a href="#"
+                ><i class="fab fa-facebook-messenger text-black m-2"></i
+              ></a>
+              <a href="#"><i class="fab fa-facebook text-black m-2"></i></a>
+              <a href="#"><i class="fab fa-instagram text-black m-2"></i></a>
+              <p class="m-1">|</p>
+              <a href="#"
+                ><i class="far fa-heart m-2 text-black" id="bookmark"></i
+              ></a>
+              <label for="bookmark" class="m-1">Favorites (231)</label>
+              <br />
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <br />
+    <br />
 
     <footer class="bg-dark text-white pt-5 p-4">
       <div class="container text-center text-md-left">
