@@ -28,7 +28,3 @@ button:hover {
 .far:hover {
   transform: scale(1.1);
 }
-.star:hover {
-  transform: scale(1.1);
-  color: rgb(255, 221, 29);
-}
