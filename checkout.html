@@ -113,94 +113,137 @@
         </nav>
       </div>
     </div>
-
-    <div class="container p-4">
-      <h1 class="text-center">SHOPPING CART</h1>
+    <div class="container">
+      <h3 class="p-3 text-center">CHECK OUT</h3>
     </div>
-    <div class="container shadow-lg text-center">
-      <div class="col-12 p-3 fs-4" style="font-weight: 700">
-        <div class="row">
-          <div class="col-5">PRODUCT</div>
-          <div class="col-3">QTY.</div>
-          <div class="col-4">PRICE</div>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="container p-3 shadow-lg">
-      <div class="row text-center">
-        <div class="col-12 p-3">
-          <div class="row">
-            <div class="col-5">
-              <img src="image/product.png" style="width: 70%" /><br />
-              Size: Large
+    <div class="row"></div>
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-6 col-sm-12 shadow">
+          <div class="container">
+            <div class="row">
+              <h3 class="p-2 text-center">SHIPPING ADDRESS</h3>
+              <div class="col-lg-6 col-md-12">
+                <label for="name">Name: </label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <label for="contact">Contact No: </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="contact"
+                  required
+                />
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <label for="house">House No: </label>
+                <input type="text" class="form-control" id="house" required />
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <label for="city">City: </label>
+                <input type="text" class="form-control" id="city" required />
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <label for="state">State/Province: </label>
+                <input type="text" class="form-control" id="state" required />
+              </div>
+              <div class="col-lg-6 col-md-12">
+                <label for="postal">Postal: </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="postal"
+                  required
+                />
+              </div>
             </div>
-            <div class="col-3 fs-3">
+          </div>
+          <div class="p-3">
+            <label for="vouch">ENTER VOUCHER:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="vouch"
+              placeholder="Enter Code"
+            />
+            <br />
+            <div class="container text-center">
+              <button class="btn btn-outline-dark w-50">APPLY VOUCHER</button>
+            </div>
+          </div>
+          <form class="p-3">
+            <div class="form-check">
               <input
-                type="number"
-                style="width: 35px"
-                id="qty"
-                class="border-0"
-                placeholder="1"
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault1"
               />
+              <label class="form-check-label" for="flexRadioDefault1">
+                <p>Express Local (3-5 Days)</p>
+              </label>
             </div>
-            <div class="col-4"><p class="fs-3">650.00</p></div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="flexRadioDefault"
+                id="flexRadioDefault2"
+                checked
+              />
+              <label class="form-check-label" for="flexRadioDefault2">
+                <p>Standard Local (10-15 Days)</p>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-5 col-sm-12 shadow p-3">
+          <div class="container">
+            <h3 class="text-center">SUMMARY</h3>
+          </div>
+          <br />
+          <div class="d-flex justify-content-between">
+            <p>Subtotal:</p>
+            <p>650.00</p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <p>Tax:</p>
+            <p>0.01%</p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <p>Discount:</p>
+            <p>-49.00</p>
+          </div>
+          <hr />
+          <div class="d-flex justify-content-between">
+            <h3>TOTAL:</h3>
+            <h3>1,882.00</h3>
+          </div>
+          <br />
+          <div class="d-flex justify-content-between">
+            <h5>Payment Options</h5>
+            <select id="size" class="border-0 bg-light">
+              <option selected="Size">Cash On Delivery</option>
+              <option value="s">Bank Payment</option>
+              <option value="m">Credit Card</option>
+              <option value="l">Gcash</option>
+            </select>
+          </div>
+          <br />
+          <div class="d-flex justify-content-center">
+            <img src="image/p1.png" style="width: 50px" class="p-2" />
+            <img src="image/p3.png" style="width: 45px" class="p-2" />
+            <img src="image/p2.png" style="width: 50px" class="p-2" />
+          </div>
+          <br />
+          <div class="container text-center">
+            <a href="index.html"><button class="btn btn-dark w-75">PLACE ORDER</button></a>
           </div>
         </div>
-        <hr />
-        <div class="col-12 p-3">
-          <div class="row">
-            <div class="col-5">
-              <img src="image/product.png" style="width: 70%" /> <br />
-              Size: Large
-            </div>
-            <div class="col-3 fs-3">
-              <input
-                type="number"
-                style="width: 35px"
-                id="qty"
-                class="border-0"
-                placeholder="1"
-              />
-            </div>
-            <div class="col-4"><p class="fs-3">650.00</p></div>
-          </div>
-        </div>
-        <hr />
-        <div class="col-12 p-3">
-          <div class="row">
-            <div class="col-5">
-              <img src="image/product.png" style="width: 70%" /><br />
-              Size: Large
-            </div>
-            <div class="col-3 fs-3">
-              <input
-                type="number"
-                style="width: 35px"
-                id="qty"
-                class="border-0"
-                placeholder="1"
-              />
-            </div>
-            <div class="col-4"><p class="fs-3">650.00</p></div>
-          </div>
-        </div>
       </div>
-      <hr />
-      <div
-        class="container d-flex justify-content-between p-3"
-        style="font-weight: 700"
-      >
-        <h2>TOTAL:</h2>
-        <h2>1,950.00</h2>
-      </div>
-      <br />
-      <div class="container d-flex justify-content-center">
-        <a href="checkout.html"
-          ><button class="btn btn-dark fs-3">CHECK OUT</button></a
-        >
-      </div>
-      <br />
     </div>
 
     <br />
