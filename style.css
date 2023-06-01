@@ -28,11 +28,11 @@ button:hover {
 .far:hover {
   transform: scale(1.1);
 }
-.huh {
+.Productimg{
   width: 100%;
   padding: 10px;
 }
-.huhu:hover {
+.ProductCard:hover {
   background-color: white;
   box-shadow: 3px 3px 5px rgb(200, 200, 200);
 }
