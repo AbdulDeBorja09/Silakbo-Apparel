@@ -41,3 +41,15 @@ button:hover {
   color: white;
   font-weight: 700;
 }
+.imgBox {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: auto;
+  border: 1px dashed #262626;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.imgBox img {
+  width: 100%;
+}
