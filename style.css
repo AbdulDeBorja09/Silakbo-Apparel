@@ -5,6 +5,7 @@
 a {
   text-decoration: none;
 }
+
 .nav-link:hover {
   border-bottom: 1px solid white;
 }
@@ -28,7 +29,7 @@ button:hover {
 .far:hover {
   transform: scale(1.1);
 }
-.Productimg{
+.Productimg {
   width: 100%;
   padding: 10px;
 }
