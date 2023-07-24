@@ -54,3 +54,7 @@ button:hover {
 .imgBox img {
   width: 100%;
 }
+iframe{
+  width: 80%;
+  height: 500px;
+}
