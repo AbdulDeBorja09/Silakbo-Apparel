@@ -4,9 +4,9 @@ function validate() {
   var password = document.getElementById("password").value;
 
   if (username == "admin" && password == "silakbo123") {
-    window.location.href = "index.html";
-  } else {
     window.location.href =
       "https://abduldeborja09.github.io/SilakboApparel/onsite.html";
+  } else {
+    alert("failed");
   }
 }
