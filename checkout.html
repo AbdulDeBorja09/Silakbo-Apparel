@@ -121,6 +121,7 @@
       <h3 class="p-3 text-center">CHECK OUT</h3>
     </div>
     <div class="row"></div>
+    <form action="">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-6 col-sm-12 shadow">
@@ -152,6 +153,7 @@
                 <label for="state">State/Province: </label>
                 <input type="text" class="form-control" id="state" required />
               </div>
+              
               <div class="col-lg-6 col-md-12">
                 <label for="postal">Postal: </label>
                 <input
@@ -161,16 +163,21 @@
                   required
                 />
               </div>
+              <div class="col-lg-12 ">
+                <label for="country" >Country: </label>
+                <input type="text" class="form-control" id="country" required>
+              </div>
+              <div class="p-">
+                <label for="vouch">ENTER VOUCHER:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="vouch"
+                  placeholder="Enter Code"
+                />
+            
             </div>
           </div>
-          <div class="p-3">
-            <label for="vouch">ENTER VOUCHER:</label>
-            <input
-              type="text"
-              class="form-control"
-              id="vouch"
-              placeholder="Enter Code"
-            />
             <br />
             <div class="container text-center">
               <button class="btn btn-outline-dark w-50">APPLY VOUCHER</button>
@@ -202,6 +209,8 @@
             </div>
           </form>
         </div>
+        <br>
+        &nbsp;
         <div class="col-lg-5 col-sm-12 shadow p-3">
           <div class="container">
             <h3 class="text-center">Shopping Checkout</h3>
@@ -224,7 +233,7 @@
                 <tr>
                   <th>Remove</th>
                   <th>Qty</th>
-                  <th>Item Name</th>
+                  <th>Item</th>
                   <th>Cost</th>
                   <th class="text-xs-right">Subtotal</th>
                 </tr>
@@ -268,6 +277,7 @@
         </div>
       </div>
     </div>
+    </form>
     <br /><br />
     <footer class="bg-dark text-white pt-5 pb-4">
       <div class="container text-center text-md-left">
@@ -434,19 +444,19 @@
               a +
               '" value="' +
               value.qty +
-              '" style="width: 40px;" data-id="' +
+              '" style="width: 35px;" data-id="' +
               value.id +
               '"></td><td><input type="hidden" name="item_name_' +
               a +
               '" value="' +
               value.name +
-              " " +
+              " " + " " +
               value.s +
               '">' +
               value.name +
-              "(" +
-              value.s +
-              ')</td><td><input type="hidden" name="amount_' +
+              "<b> (</b>" +
+              value.s.bold()+
+              '<b>)</b></td><td><input type="hidden" name="amount_' +
               a +
               '" value="' +
               formatMoney(value.price) +

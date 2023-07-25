@@ -128,26 +128,8 @@
           ><i class="fas fa-arrow-left fs-5 text-black p-2"></i
         ></a>
         <div class="container d-flex justify-content-end">
-          <h5 class="m-2">SORT BY:</h5>
-          <div class="dropdown">
-            <button
-              class="btn btn-outline-dark dropdown-toggle"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              CATEGORY
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item">Alphabetically, A-Z</a></li>
-              <hr class="dropdown-divider" />
-              <li><a class="dropdown-item">Alphabetically, Z-A</a></li>
-              <hr class="dropdown-divider" />
-              <li><a class="dropdown-item">Price, Low to High</a></li>
-              <hr class="dropdown-divider" />
-              <li><a class="dropdown-item">Price, High to Low</a></li>
-            </ul>
-          </div>
+          <h5 class="m-2"><b>ITEMS IN CART: </b> <span class="items"></span></h5>
+          
         </div>
       </div>
     </div>
@@ -155,20 +137,6 @@
     <div class="container bg-light p-3 shadow-lg text-center">
       <h1 class="text-center">OUR PRODUCTS</h1>
       <br />
-     
-      <div id="checkoutdiv" style="display: none">
-        <div>
-          Items in cart: <span class="items"></span> <br> Total:
-          <span class="total"> </span>
-        </div>
-        <div class="mt-3 mb-3">
-          <span class="btn btn-dark mx-5"
-            ><a href="checkout.html" class="text-white"
-              >Proceed to Checkout</a
-            ></span
-          >
-        </div>
-      </div>
       <div class="conatiner text-center">
         <div class="row row-cols-2 row-cols-md-4 row-cols-sm-2 g-4">
           <!-- sil1 -->
@@ -197,7 +165,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T5"
-                      data-s="small"
+                      data-s="S"
                       data-price="59995"
                       data-id="1"
                       style="font-size: 15px"
@@ -235,7 +203,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T5"
-                      data-s="medium"
+                      data-s="M"
                       data-price="59995"
                       data-id="2"
                       style="font-size: 15px"
@@ -272,7 +240,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T5"
-                      data-s="large"
+                      data-s="L"
                       data-price="59995"
                       data-id="3"
                       style="font-size: 15px"
@@ -310,7 +278,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T5"
-                      data-s="xl"
+                      data-s="XL"
                       data-price="59995"
                       data-id="4"
                       style="font-size: 15px"
@@ -346,7 +314,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T6"
-                      data-s="small"
+                      data-s="S"
                       data-price="89995"
                       data-id="5"
                       style="font-size: 15px"
@@ -382,7 +350,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T6"
-                      data-s="medium"
+                      data-s="M"
                       data-price="89995"
                       data-id="6"
                       style="font-size: 15px"
@@ -418,7 +386,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T6"
-                      data-s="large"
+                      data-s="L"
                       data-price="89995"
                       data-id="7"
                       style="font-size: 15px"
@@ -454,7 +422,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T6"
-                      data-s="xl"
+                      data-s="XL"
                       data-price="89995"
                       data-id="8"
                       style="font-size: 15px"
@@ -492,7 +460,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T7"
-                      data-s="small"
+                      data-s="S"
                       data-price="69995"
                       data-id="9"
                       style="font-size: 15px"
@@ -530,7 +498,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T7"
-                      data-s="medium"
+                      data-s="M"
                       data-price="69995"
                       data-id="10"
                       style="font-size: 15px"
@@ -568,7 +536,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T7"
-                      data-s="large"
+                      data-s="L"
                       data-price="69995"
                       data-id="11"
                       style="font-size: 15px"
@@ -606,7 +574,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T7"
-                      data-s="xl"
+                      data-s="XL"
                       data-price="69995"
                       data-id="12"
                       style="font-size: 15px"
@@ -644,7 +612,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T8"
-                      data-s="small"
+                      data-s="S"
                       data-price="69995"
                       data-id="13"
                       style="font-size: 15px"
@@ -682,7 +650,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T8"
-                      data-s="medium"
+                      data-s="M"
                       data-price="69995"
                       data-id="14"
                       style="font-size: 15px"
@@ -720,7 +688,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T8"
-                      data-s="large"
+                      data-s="L"
                       data-price="69995"
                       data-id="15"
                       style="font-size: 15px"
@@ -758,7 +726,7 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T8"
-                      data-s="xl"
+                      data-s="XL"
                       data-price="69995"
                       data-id="16"
                       style="font-size: 15px"
