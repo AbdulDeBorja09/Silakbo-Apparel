@@ -7,5 +7,6 @@ function validate() {
     window.location.href = "index.html#sectionhome";
   } else {
     Swal.fire('Any fool can use a computer')
+    
   }
 }
