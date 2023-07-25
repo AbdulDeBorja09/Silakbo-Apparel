@@ -162,7 +162,7 @@
       <br />
       <div id="checkoutdiv" style="display: none">
         <div>
-          Subtotal <span class="items"></span> (items);
+          Subtotal <span class="items"></span> items<br>
           <span class="total"></span>
         </div>
         <div class="mt-3 mb-3">
@@ -184,7 +184,7 @@
               <a href="#" class="text-black">
                 <h5 class="-title" style="font-weight: 700">I am Beautiful</h5>
                 <h6 class="subtitle">"Small"</h6>
-                <p class="text-danger">PHP 599.95</p>
+                <p class="text-danger">PHP 550.00</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -199,8 +199,8 @@
                       href="#"
                       class="productItem text-white"
                       data-name="T1"
-                      data-s="small"
-                      data-price="59995"
+                      data-s="S"
+                      data-price="55000"
                       data-id="1"
                       style="font-size: 15px"
                     >
@@ -220,7 +220,7 @@
               <a href="#" class="text-black">
                 <h5 class="-title" style="font-weight: 700">I am Beautiful</h5>
                 <h6 class="subtitle">"Medium"</h6>
-                <p class="text-danger">PHP 599.95</p>
+                <p class="text-danger">PHP 550.00</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -236,7 +236,7 @@
                       class="productItem text-white"
                       data-name="T1"
                       data-s="medium"
-                      data-price="59995"
+                      data-price="55000"
                       data-id="2"
                       style="font-size: 15px"
                     >
@@ -255,7 +255,7 @@
               <a href="#" class="text-black">
                 <h5 class="-title" style="font-weight: 700">I am Beautiful</h5>
                 <h6 class="subtitle">"Large"</h6>
-                <p class="text-danger">PHP 599.95</p>
+                <p class="text-danger">PHP 550.00</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -271,7 +271,7 @@
                       class="productItem text-white"
                       data-name="T1"
                       data-s="large"
-                      data-price="59995"
+                      data-price="55000"
                       data-id="3"
                       style="font-size: 15px"
                     >
@@ -291,7 +291,7 @@
               <a href="#" class="text-black">
                 <h5 class="-title" style="font-weight: 700">I am Beautiful</h5>
                 <h6 class="subtitle">"Extra Large"</h6>
-                <p class="text-danger">PHP 599.95</p>
+                <p class="text-danger">PHP 550.00</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -307,7 +307,7 @@
                       class="productItem text-white"
                       data-name="T1"
                       data-s="xl"
-                      data-price="59995"
+                      data-price="55000"
                       data-id="4"
                       style="font-size: 15px"
                     >
@@ -481,7 +481,7 @@
                   Make Today Ridiculously Amazing
                 </h5>
                 <h6 class="subtitle">"Small"</h6>
-                <p class="text-danger">PHP 999.95</p>
+                <p class="text-danger">PHP 999.99</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -497,7 +497,7 @@
                       class="productItem text-white"
                       data-name="T3"
                       data-s="small"
-                      data-price="99995"
+                      data-price="99999"
                       data-id="9"
                       style="font-size: 15px"
                     >
@@ -519,7 +519,7 @@
                   Make Today Ridiculously Amazing
                 </h5>
                 <h6 class="subtitle">"Medium"</h6>
-                <p class="text-danger">PHP 999.95</p>
+                <p class="text-danger">PHP 999.99</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -535,7 +535,7 @@
                       class="productItem text-white"
                       data-name="T3"
                       data-s="medium"
-                      data-price="99995"
+                      data-price="99999"
                       data-id="10"
                       style="font-size: 15px"
                     >
@@ -557,7 +557,7 @@
                   Make Today Ridiculously Amazing
                 </h5>
                 <h6 class="subtitle">"Large"</h6>
-                <p class="text-danger">PHP 999.95</p>
+                <p class="text-danger">PHP 999.99</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -573,7 +573,7 @@
                       class="productItem text-white"
                       data-name="T3"
                       data-s="large"
-                      data-price="99995"
+                      data-price="99999"
                       data-id="11"
                       style="font-size: 15px"
                     >
@@ -595,7 +595,7 @@
                   Make Today Ridiculously Amazing
                 </h5>
                 <h6 class="subtitle">"Extra Large"</h6>
-                <p class="text-danger">PHP 999.95</p>
+                <p class="text-danger">PHP 999.99</p>
                 <div class="star">
                   <i class="fa fa-star checked"></i>
                   <i class="fa fa-star checked"></i>
@@ -611,7 +611,7 @@
                       class="productItem text-white"
                       data-name="T3"
                       data-s="xl"
-                      data-price="99995"
+                      data-price="99999"
                       data-id="12"
                       style="font-size: 15px"
                     >
@@ -1004,14 +1004,7 @@
             holderHTML +=
               '<tr><td><span class="btn btn-outline-danger remove-item">x</span></td><td>' +
               value.qty +
-              "</td><td>#" +
-              value.id +
-              " " +
-              value.name +
-              "(" +
-              value.s +
-              ")</td><td> " +
-              formatMoney(value.price) +
+              "</td><td>#" + value.id + " " + value.name + " (" + value.s + ")</td><td> " + formatMoney(value.price) +
               ' </td><td class="text-xs-right"> ' +
               formatMoney(stotal) +
               "</td></tr>";
@@ -1027,7 +1020,7 @@
         }
 
         function formatMoney(n) {
-          return "Php" + (n / 100).toFixed(2);
+          return (n / 100).toFixed(2);
         }
       });
     </script>
