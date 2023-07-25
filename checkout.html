@@ -232,12 +232,12 @@
               <tbody id="output"></tbody>
             </table>
             <div class="d-flex justify-content-between">
-              <a href="products.html" class="btn btn-success"
+              <a href="product.html" class="btn btn-outline-dark"
                 >Continue Shopping</a
               >
               <input
                 type="submit"
-                class="btn btn-primary btn-block"
+                class="btn btn-outline-dark btn-block"
                 value="Checkout with PayPal"
               />
             </div>
@@ -430,11 +430,11 @@
             total += stotal;
             itemCnt += parseInt(value.qty);
             holderHTML +=
-              '<tr><td><span class="btn btn-danger remove-item">x</span></td><td><input size="5"  type="number" class="dynqua" name="quantity_' +
+              '<tr><td><span class="btn btn-outline-danger remove-item">x</span></td><td><input size="5"  type="number" class="dynqua" name="quantity_' +
               a +
               '" value="' +
               value.qty +
-              '" data-id="' +
+              '" style="width: 40px;" data-id="' +
               value.id +
               '"></td><td><input type="hidden" name="item_name_' +
               a +
@@ -450,14 +450,14 @@
               a +
               '" value="' +
               formatMoney(value.price) +
-              '"> Php' +
+              '"> ' +
               formatMoney(value.price) +
               ' </td><td class="text-xs-right"> ' +
               formatMoney(stotal) +
               "</td></tr>";
           });
           holderHTML +=
-            '<tr><td colspan="4" class="text-xs-right">Total</td><td class="text-xs-right">Php' +
+            '<tr><td colspan="4" class="text-xs-right">Total</td><td class="text-xs-right">' +
             formatMoney(total) +
             "</td></tr>";
           $("#output").html(holderHTML);
