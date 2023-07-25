@@ -6,6 +6,6 @@ function validate() {
   if (username === "admin" && password === "silakbo123") {
     window.location.href = "index.html#sectionhome";
   } else {
-    alert("failed");
+    Swal.fire('Any fool can use a computer')
   }
 }
