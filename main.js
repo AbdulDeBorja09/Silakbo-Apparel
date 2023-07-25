@@ -9,5 +9,3 @@ function validate() {
     alert("failed");
   }
 }
-
-// 
