@@ -6,6 +6,43 @@ function validate() {
   if (username === "admin" && password === "silakbo123") {
     window.location.href = "index.html#sectionhome";
   } else {
-    alert("wrong");
+    swal({
+      title: "Login Failed!",
+      text: "Invalid Login Credentials",
+      icon: "error",
+      button: "Continue",
+    });
+  }
+}
+
+function placeorder() {
+  var name = document.getElementById("name");
+  var contact = document.getElementById("contact");
+  var house = document.getElementById("house");
+  var state = document.getElementById("state");
+  var postal = document.getElementById("postal");
+  var country = document.getElementById("country");
+
+  if (
+    name == "" ||
+    contact == "" ||
+    house == "" ||
+    state == "" ||
+    postal == "" ||
+    country == ""
+  ) {
+    swal({
+      title: "successs",
+      text: "order places",
+      icon: "success",
+      button: "Continue",
+    });
+  } else {
+    swal({
+      title: "successs",
+      text: "order places",
+      icon: "success",
+      button: "Continue",
+    });
   }
 }

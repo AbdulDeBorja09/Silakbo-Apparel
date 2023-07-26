@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="icon" href="image/silakbologo.png" type="image/x-icon">
+    <link rel="icon" href="image/silakbologo.png" type="image/x-icon" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,9 +20,12 @@
       src="https://kit.fontawesome.com/8a364c3095.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Poiret+One&family=Rajdhani:wght@300&display=swap");
     </style>
+    <link rel="stylesheet" href="path/to/sweetalert2.min.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <title>Silakbo | Check Out</title>
   </head>
   <body>
@@ -33,7 +36,10 @@
       <div class="container-{breakpoint} bg-black">
         <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
-            <a href="index.html#sectionhome" class="navbar-brand text-white p-0">
+            <a
+              href="index.html#sectionhome"
+              class="navbar-brand text-white p-0"
+            >
               Silakbo</a
             >
             <button
@@ -122,162 +128,167 @@
     </div>
     <div class="row"></div>
     <form action="">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-6 col-sm-12 shadow">
-          <div class="container">
-            <div class="row">
-              <h3 class="p-2 text-center">SHIPPING ADDRESS</h3>
-              <div class="col-lg-6 col-md-12">
-                <label for="name">Name: </label>
-                <input type="text" class="form-control" id="name" required />
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-sm-12 shadow">
+            <div class="container">
+              <div class="row">
+                <h3 class="p-2 text-center">SHIPPING ADDRESS</h3>
+                <div class="col-lg-6 col-md-12">
+                  <label for="name">Name: </label>
+                  <input type="text" class="form-control" id="name" required />
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <label for="contact">Contact No: </label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="contact"
+                    required
+                  />
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <label for="house">House No: </label>
+                  <input type="text" class="form-control" id="house" required />
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <label for="city">City: </label>
+                  <input type="text" class="form-control" id="city" required />
+                </div>
+                <div class="col-lg-6 col-md-12">
+                  <label for="state">State/Province: </label>
+                  <input type="text" class="form-control" id="state" required />
+                </div>
+
+                <div class="col-lg-6 col-md-12">
+                  <label for="postal">Postal: </label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="postal"
+                    required
+                  />
+                </div>
+                <div class="col-lg-12">
+                  <label for="country">Country: </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="country"
+                    required
+                  />
+                </div>
+                <div class="p-">
+                  <label for="vouch">ENTER VOUCHER:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="vouch"
+                    placeholder="Enter Code"
+                  />
+                </div>
               </div>
-              <div class="col-lg-6 col-md-12">
-                <label for="contact">Contact No: </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="contact"
-                  required
-                />
+              <br />
+              <div class="container text-center">
+                <button class="btn btn-outline-dark w-50">APPLY VOUCHER</button>
               </div>
-              <div class="col-lg-6 col-md-12">
-                <label for="house">House No: </label>
-                <input type="text" class="form-control" id="house" required />
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <label for="city">City: </label>
-                <input type="text" class="form-control" id="city" required />
-              </div>
-              <div class="col-lg-6 col-md-12">
-                <label for="state">State/Province: </label>
-                <input type="text" class="form-control" id="state" required />
-              </div>
-              
-              <div class="col-lg-6 col-md-12">
-                <label for="postal">Postal: </label>
-                <input
-                  type="number"
-                  class="form-control"
-                  id="postal"
-                  required
-                />
-              </div>
-              <div class="col-lg-12 ">
-                <label for="country" >Country: </label>
-                <input type="text" class="form-control" id="country" required>
-              </div>
-              <div class="p-">
-                <label for="vouch">ENTER VOUCHER:</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="vouch"
-                  placeholder="Enter Code"
-                />
-            
             </div>
+            <form class="p-3">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault1"
+                />
+                <label class="form-check-label" for="flexRadioDefault1">
+                  <p>Express Local (3-5 Days)</p>
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="flexRadioDefault"
+                  id="flexRadioDefault2"
+                  checked
+                />
+                <label class="form-check-label" for="flexRadioDefault2">
+                  <p>Standard Local (10-15 Days)</p>
+                </label>
+              </div>
+            </form>
           </div>
+          <br />
+          &nbsp;
+          <div class="col-lg-5 col-sm-12 shadow p-3">
+            <div class="container">
+              <h3 class="text-center">Shopping Checkout</h3>
+            </div>
+            <br />
+            <form
+              action="https://www.paypal.com/cgi-bin/webscr"
+              method="post"
+              target="_blank"
+            >
+              <input type="hidden" name="cmd" value="_cart" />
+              <input type="hidden" name="upload" value="1" />
+              <input
+                type="hidden"
+                name="business"
+                value="seller@dezignerfotos.com"
+              />
+              <table class="table table-hover">
+                <thead class="thead-inverse">
+                  <tr>
+                    <th>Remove</th>
+                    <th>Qty</th>
+                    <th>Item</th>
+                    <th>Cost</th>
+                    <th class="text-xs-right">Subtotal</th>
+                  </tr>
+                </thead>
+                <tbody id="output"></tbody>
+              </table>
+              <div class="d-flex justify-content-evenly">
+                <a href="product.html" class="btn btn-outline-dark"
+                  >Continue Shopping</a
+                >
+                <input
+                  type="submit"
+                  class="btn btn-outline-dark btn-block"
+                  value="Checkout with PayPal"
+                />
+              </div>
+            </form>
+
+            <br />
+            <div class="d-flex justify-content-between">
+              <h5>Payment Options</h5>
+              <select id="size" style="border: 0">
+                <option selected="Size">Cash On Delivery</option>
+                <option value="s">Bank Payment</option>
+                <option value="m">Credit Card</option>
+                <option value="l">Gcash</option>
+              </select>
+            </div>
+            <br />
+            <div class="d-flex justify-content-center">
+              <img src="image/p1.png" style="width: 50px" class="p-2" />
+              <img src="image/p3.png" style="width: 45px" class="p-2" />
+              <img src="image/p2.png" style="width: 50px" class="p-2" />
+            </div>
             <br />
             <div class="container text-center">
-              <button class="btn btn-outline-dark w-50">APPLY VOUCHER</button>
+              <button onclick="placeorder()" type="button" class="btn btn-dark w-75">
+                PLACE ORDER
+              </button>
             </div>
-          </div>
-          <form class="p-3">
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault1"
-              />
-              <label class="form-check-label" for="flexRadioDefault1">
-                <p>Express Local (3-5 Days)</p>
-              </label>
-            </div>
-            <div class="form-check">
-              <input
-                class="form-check-input"
-                type="radio"
-                name="flexRadioDefault"
-                id="flexRadioDefault2"
-                checked
-              />
-              <label class="form-check-label" for="flexRadioDefault2">
-                <p>Standard Local (10-15 Days)</p>
-              </label>
-            </div>
-          </form>
-        </div>
-        <br>
-        &nbsp;
-        <div class="col-lg-5 col-sm-12 shadow p-3">
-          <div class="container">
-            <h3 class="text-center">Shopping Checkout</h3>
-          </div>
-          <br />
-          <form
-            action="https://www.paypal.com/cgi-bin/webscr"
-            method="post"
-            target="_blank"
-          >
-            <input type="hidden" name="cmd" value="_cart" />
-            <input type="hidden" name="upload" value="1" />
-            <input
-              type="hidden"
-              name="business"
-              value="seller@dezignerfotos.com"
-            />
-            <table class="table table-hover">
-              <thead class="thead-inverse">
-                <tr>
-                  <th>Remove</th>
-                  <th>Qty</th>
-                  <th>Item</th>
-                  <th>Cost</th>
-                  <th class="text-xs-right">Subtotal</th>
-                </tr>
-              </thead>
-              <tbody id="output"></tbody>
-            </table>
-            <div class="d-flex justify-content-evenly">
-              <a href="product.html" class="btn btn-outline-dark"
-                >Back</a
-              >
-              <input
-                type="submit"
-                class="btn btn-outline-dark btn-block"
-                value="Checkout with PayPal"
-              />
-            </div>
-          </form>
-
-          <br />
-          <div class="d-flex justify-content-between">
-            <h5>Payment Options</h5>
-            <select id="size" style="border: 0">
-              <option selected="Size">Cash On Delivery</option>
-              <option value="s">Bank Payment</option>
-              <option value="m">Credit Card</option>
-              <option value="l">Gcash</option>
-            </select>
-          </div>
-          <br />
-          <div class="d-flex justify-content-center">
-            <img src="image/p1.png" style="width: 50px" class="p-2" />
-            <img src="image/p3.png" style="width: 45px" class="p-2" />
-            <img src="image/p2.png" style="width: 50px" class="p-2" />
-          </div>
-          <br />
-          <div class="container text-center">
-            <a href="index.html#sectionhome"
-              ><button class="btn btn-dark w-75">PLACE ORDER</button></a
-            >
           </div>
         </div>
       </div>
-    </div>
     </form>
+
     <br /><br />
     <footer class="bg-dark text-white pt-5 pb-4">
       <div class="container text-center text-md-left">
@@ -289,7 +300,7 @@
             >
               SILAKBO APPAREL
             </h5>
-            <p> 
+            <p>
               Often, because of misconceptions about mental health and mental
               fitness, people often suffer in silence and their conditions go
               untreated. Mental health awareness is an important social movement
@@ -450,12 +461,13 @@
               a +
               '" value="' +
               value.name +
-              " " + " " +
+              " " +
+              " " +
               value.s +
               '">' +
               value.name +
               "<b> (</b>" +
-              value.s.bold()+
+              value.s.bold() +
               '<b>)</b></td><td><input type="hidden" name="amount_' +
               a +
               '" value="' +
