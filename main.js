@@ -6,12 +6,6 @@ function validate() {
   if (username === "admin" && password === "silakbo123") {
     window.location.href = "index.html#sectionhome";
   } else {
-    swal({
-      title: "Good job!",
-      text: "You clicked the button!",
-      icon: "success",
-      button: "Aww yiss!",
-    });
-    
+    alert("wrong");
   }
 }
