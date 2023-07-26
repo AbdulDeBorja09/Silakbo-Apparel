@@ -39,8 +39,8 @@ function placeorder() {
     });
   } else {
     swal({
-      title: "successs",
-      text: "order places",
+      title: "Order Success",
+      text: "Thank you for shopping!",
       icon: "success",
       button: "Continue",
     });
