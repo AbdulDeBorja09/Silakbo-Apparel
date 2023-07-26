@@ -24,6 +24,21 @@
       @import url("https://fonts.googleapis.com/css2?family=Arsenal&family=Poiret+One&family=Rajdhani:wght@300&display=swap");
     </style>
     <title>Silakbo | Products</title>
+    <style>
+      .carousel-inner {
+        padding: 18px;
+        border-radius: 25px;
+      }
+      .carousel-caption {
+        position: static;
+        color: black;
+      }
+      .carousel-caption h3 {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <div class="container text-center">
@@ -748,6 +763,159 @@
       </div>
     </div>
     <br /><br />
+    <div class="container text-center">
+      <h3>SILAKBO RATINGS</h3>
+      <div class="star">
+        <i class="fa fa-star checked"></i>
+        <i class="fa fa-star checked"></i>
+        <i class="fa fa-star checked"></i>
+        <i class="fa fa-star checked"></i>
+        <i class="fa fa-star-half-o"></i>
+      </div>
+      <p>4.9</p>
+    </div>
+    <div class="container">
+      <h3 class="text-center">SEND FEEDBACK</h3>
+      <form class="row justify-content-center">
+        <div class="col-lg-4 col-sm-4">
+          <label for="name">Name (Required)</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="col-lg-4 col-sm-4 m">
+          <label for="email">Email (Required)</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+        <div class="col-lg-8 col-sm-8 p1">
+          <label for="feed">Message</label>
+          <textarea
+            class="form-control"
+            id="feed"
+            cols="60"
+            rows="5"
+          ></textarea>
+        </div>
+      </form>
+      <div class="container p-3 text-center">
+        <label for="feedback"></label>
+        <button class="btn btn-dark">
+          <a href="" class="text-white">SEND FEEDBACK</a>
+        </button>
+      </div>
+    </div>
+    <br /><br /><br />
+    <div class="container text-center">
+      <h1>CUSTOMER REVIEW</h1>
+      <br />
+    </div>
+    <div class="container shadow-lg" style="border-radius: 15px">
+      <div id="carousels" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousels"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="imgBox">
+              <img src="image/profile1.png" alt="" />
+            </div>
+            <div class="carousel-caption p-2">
+              <h3>Camille Anne</h3>
+              <p>
+                Having family, friends, and being a student has very much helped
+                me to accept my mental illness. Knowing that hope is the
+                “cornerstone of recovery,” and believing you can have success
+                with your life is critical. Your successes and dreams take on
+                many different directions to arrive at your destination. Not
+                giving up in life has been a positive thing for me. It has
+                helped me to make a lot of progress in my life.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="imgBox">
+              <img src="image/profile2.png" alt="" />
+            </div>
+            <div class="carousel-caption p-2">
+              <h3>Gustavo Alonzo </h3>
+              <p>
+                Having acceptance of my mental illness means taking charge of my
+                life and moving forward. This has played a big part in my
+                recovery. I started to have acceptance of my mental illness
+                after giving myself credit for my strengths and weaknesses and
+                accepting my limitations. Also, believing that I have something
+                to offer in society and doing positive, healthy things in my
+                life.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="imgBox">
+              <img src="image/profile3.png" alt="" />
+            </div>
+            <div class="carousel-caption p-2">
+              <h3>Ayesha Gray</h3>
+              <p>
+                I started to have more conversations with my parents about my
+                mental health and, little by little, I contributed to their
+                understanding of my experiences. I asked my partner, who was
+                also Chinese and who spent most of his formative years living
+                abroad, to teach me how to cook authentic Asian recipes that my
+                grandmother had made me as a kid. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousels"
+          data-bs-slide="prev"
+        >
+          <a class="text-black"><i class="fas fa-chevron-left"></i></a>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousels"
+          data-bs-slide="next"
+        >
+          <a class="text-black"><i class="fas fa-chevron-right"></i></a>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <br /><br /><br />
     <footer class="bg-dark text-white pt-5 p-4">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left">
